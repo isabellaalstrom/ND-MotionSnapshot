@@ -1,14 +1,3 @@
-# Netdaemon - MotionSnapshot for Discord
-
-Send snapshots of all your cameras to Discord when your alarm triggers.
-
-## Install
-
-With HACS (0.23+).
-
-## Configuration in motionsnapshot.yaml
-
-``` 
 motion_snapshot:
   class: MotionSnapshot
 
