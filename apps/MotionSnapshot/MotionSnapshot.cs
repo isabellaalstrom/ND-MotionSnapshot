@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using JoySoftware.HomeAssistant.NetDaemon.Common;
+using NetDaemon.Common;
 
 public class MotionSnapshot : NetDaemonApp
 {
@@ -30,7 +30,7 @@ public class MotionSnapshot : NetDaemonApp
                     entity_id = camera,
                     filename = FilePath.Replace("{camera}", camera)
                 });
-                await app.CallService("notify", this.DiscordNotifier, new
+                await CallService("notify", this.DiscordNotifier, new
                 {
                     data = dict,
                     message = $"{time} - {camera}",
